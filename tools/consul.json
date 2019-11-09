@@ -13,7 +13,7 @@
         "most_recent": true
       },
       "ssh_username": "{{user `ssh_username`}}",
-      "ami_name": "updated {{timestamp}}"
+      "ami_name": "consul {{timestamp}}"
     }],
     "provisioners": [
         {
