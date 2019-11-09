@@ -1,0 +1,6 @@
+{
+    "region":             "eu-west-1",
+    "instance_type":      "t2.micro",
+    "source_ami":         "ami-02a39bdb8e8ee056a",
+    "ssh_username":       "ec2-user"
+}
