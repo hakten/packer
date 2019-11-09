@@ -35,7 +35,6 @@
               "sudo  yum install serverbackup-enterprise-agent -y",
               "sudo systemctl enable sbm-agent",
               "sudo yum install java-1.8.0-openjdk-devel   -y",
-              "sudo rpm --import public.gpg.key",
               "sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key",
               "sudo yum install jenkins -y",
               "sudo systemctl start jenkins",
