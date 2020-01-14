@@ -26,7 +26,7 @@
           "inline": [
               "sudo yum install git -y",
               "sudo yum install epel-release -y",
-              "sudo yum install python-pip",
+              "sudo yum install python-pip -y",
               "sudo git clone --single-branch --branch version/0.10 git@github.com:fuchicorp/artemis.git /",
               "sudo pip install flask",
               "sudo cp /artemis/artemis.service /etc/systemd/system/",
