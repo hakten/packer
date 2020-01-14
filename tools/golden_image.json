@@ -32,7 +32,7 @@
           "sudo mv /tmp/r1soft.repo /etc/yum.repos.d/r1soft.repo",
           "sudo yum update  -y",
           "sudo  yum install serverbackup-enterprise-agent -y",
-          "sudo systemctl enable sbm-agent"
+          "sudo systemctl enable sbm-agent",
       ]
     }
   ]

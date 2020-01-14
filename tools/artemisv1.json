@@ -29,8 +29,14 @@
               "sudo  yum install serverbackup-enterprise-agent -y",
               "sudo systemctl enable sbm-agent",
               "sudo yum install git -y",
-              "git clone 'https://github.com/fuchicorp/artemis' ",
-              "nohup python /artemis/app.py  &"
+              "sudo yum install epel-release -y",
+              "sudo yum install python-pip",
+              "sudo git clone --single-branch --branch version/0.10 git@github.com:fuchicorp/artemis.git /",
+              "sudo pip install flask",
+              "sudo cp /artemis/artemis.service /etc/systemd/system/",
+              "systemctl daemon-reload",
+              "sudo systemctl start artemis",
+              "sudo systemctl enable artemis"
             ]
         }
     ]
