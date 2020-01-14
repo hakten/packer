@@ -34,6 +34,10 @@
               "sudo systemctl start artemis",
               "sudo systemctl enable artemis"
             ]
+        },
+        {
+          "type": "breakpoint",
+          "note": "foo bar baz"
         }
     ]
 }
