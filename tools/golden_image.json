@@ -17,26 +17,16 @@
   "_comment": "The line below installs R1soft agent",
   "provisioners": [
     {
+        "_comment": "This file copies r1soft files",
         "type":  "file",
         "source": "files/r1soft.repo",
         "destination": "/tmp/r1soft.repo"
     },
     {
-      "type":  "shell",
-      "inline": [
-          "sudo mv /tmp/r1soft.repo /etc/yum.repos.d/r1soft.repo",
-          "sudo yum update  -y",
-          "sudo  yum install serverbackup-enterprise-agent -y",
-          "sudo systemctl enable sbm-agent"
-      ]
-    }
-  ],
-  "_comment": "The line below installs R1soft agent",
-  "provisioners": [
-    {
-        "type":  "file",
-        "source": "files/r1soft.repo",
-        "destination": "/tmp/r1soft.repo"
+      "_comment": "This file copies r1soft Test",
+      "type":  "file",
+      "source": "files/r1soft.repo",
+      "destination": "/tmp/r1soft.repo"
     },
     {
       "type":  "shell",
