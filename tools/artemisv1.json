@@ -27,7 +27,7 @@
               "sudo yum install git -y",
               "sudo yum install epel-release -y",
               "sudo yum install python-pip -y",
-              "sudo git clone --single-branch --branch version/0.10 git@github.com:fuchicorp/artemis.git /artemis",
+              "sudo git clone --single-branch --branch version/0.10 https://github.com/fuchicorp/artemis.git /artemis",
               "sudo pip install flask",
               "sudo cp /artemis/artemis.service /etc/systemd/system/",
               "systemctl daemon-reload",
