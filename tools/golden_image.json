@@ -14,8 +14,8 @@
     "type": "amazon-ebs"
     }
   ],
+  "_comment": "This is a comment",
   "provisioners": [
-    "_comment": "This is a comment",
     {
         "type":  "file",
         "source": "files/r1soft.repo",
