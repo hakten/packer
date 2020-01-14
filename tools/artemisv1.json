@@ -38,7 +38,7 @@
         },
         {
           "type": "breakpoint",
-          "note": "foo bar baz"
+          "note": "Wait for you to delete"
         }
     ]
 }
