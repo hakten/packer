@@ -17,13 +17,11 @@
   "_comment": "The line below installs R1soft agent",
   "provisioners": [
     {
-      "_comment": "This file copies r1soft files",
       "type":  "file",
       "source": "files/r1soft.repo",
       "destination": "/tmp/r1soft.repo"
     },
     {
-      "_comment": "This file copies r1soft Test",
       "type":  "file",
       "source": "files/r1soft.repo",
       "destination": "/tmp/r1soft.repo"
