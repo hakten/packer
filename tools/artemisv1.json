@@ -13,7 +13,7 @@
         "most_recent": true
       },
       "ssh_username": "{{user `ssh_username`}}",
-      "ami_name": "artemisv1 {{timestamp}}"
+      "ami_name": "artemisv1-{{timestamp}}"
     }],
     "provisioners": [
         {
