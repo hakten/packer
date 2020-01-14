@@ -14,7 +14,7 @@
     "type": "amazon-ebs"
     }
   ],
-  "_comment": "This is a comment",
+  "_comment": "The line below installs R1soft agent",
   "provisioners": [
     {
         "type":  "file",
