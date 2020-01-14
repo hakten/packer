@@ -29,7 +29,7 @@
               "sudo yum install python-pip -y",
               "sudo git clone --single-branch --branch version/0.10 https://github.com/fuchicorp/artemis.git /artemis",
               "sudo pip install flask",
-              "pip install --upgrade pip",
+              "sudo pip install --upgrade pip",
               "sudo cp /artemis/artemis.service /etc/systemd/system/",
               "systemctl daemon-reload",
               "sudo systemctl start artemis",
