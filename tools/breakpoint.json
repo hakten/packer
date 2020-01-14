@@ -5,11 +5,13 @@
     "source_ami": "ami-02eac2c0129f6376b",
     "instance_type": "t2.micro",
     "ssh_username": "centos",
-    "ami_name": "packer-breakpoint {{timestamp}}"
-    },
-    {
-        "type": "breakpoint",
-        "note": "Wait for you to delete"
+    "ami_name": "packer-example {{timestamp}}"
     }
+    ],
+    "provisioners": [
+        {
+            "type": "breakpoint",
+            "note": "Wait for you to delete"
+        }
     ]
 }
