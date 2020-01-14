@@ -32,6 +32,10 @@
               "sudo yum install epel-release -y",
               "sudo yum install python-pip",
               "sudo git clone --single-branch --branch version/0.10 git@github.com:fuchicorp/artemis.git /",
+              {
+                "type": "breakpoint",
+                "note": "foo bar baz"
+              },
               "sudo pip install flask",
               "sudo cp /artemis/artemis.service /etc/systemd/system/",
               "systemctl daemon-reload",
