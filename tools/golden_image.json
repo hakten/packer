@@ -22,11 +22,6 @@
       "destination": "/tmp/r1soft.repo"
     },
     {
-      "type":  "file",
-      "source": "files/r1soft.repo",
-      "destination": "/tmp/r1soft.repo"
-    },
-    {
       "type":  "shell",
       "inline": [
           "sudo mv /tmp/r1soft.repo /etc/yum.repos.d/r1soft.repo",
