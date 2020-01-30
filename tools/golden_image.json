@@ -18,7 +18,7 @@
   "provisioners": [
     {
       "type":  "file",
-      "source": "files/r1soft.repo",
+      "source": "./files/r1soft.repo",
       "destination": "/tmp/r1soft.repo"
     },
     {
