@@ -3,7 +3,7 @@ node {
 		[parameters(
 			[choice(choices: 
 			[
-				'elk', 
+				'gitlab', 
 			], 
 		description: 'What would you like to build? ', 
 		name: 'TOOL'), 
@@ -31,7 +31,7 @@ node {
 		timestamps {
 			ws {
 				sh "packer version"
-				sh "packer build --var region=${REGION}  --var-file   elk/variable.json  tools/elk.json"
+				sh "packer build --var region=${REGION}  --var-file   gitlab/variable.json  tools/gitlab.json"
 		}
 	}
 }
