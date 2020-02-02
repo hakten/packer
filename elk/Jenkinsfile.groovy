@@ -3,7 +3,8 @@ node {
 		[parameters(
 			[choice(choices: 
 			[
-				'elk', 
+				'elk',
+                'centos' 
 		description: 'What would you like to build? ', 
 		name: 'TOOL'), 
 			choice(choices: 
