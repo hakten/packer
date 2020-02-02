@@ -31,7 +31,7 @@ node {
 		timestamps {
 			ws {
 				sh "packer version"
-				sh 'packer build --var region=${REGION}  --var-file   elk/centos.json  elk/elk.json'
+				sh 'packer build --var region=${REGION}  --var-file   elk/centos.json  tools/elk.json'
 		}
 	}
 }
