@@ -4,7 +4,7 @@ node {
 			[choice(choices: 
 			[
 				'elk',
-                'centos' 
+                'centos',
 		description: 'What would you like to build? ', 
 		name: 'TOOL'), 
 			choice(choices: 
