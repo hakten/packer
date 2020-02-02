@@ -3,7 +3,7 @@ node {
 		[parameters(
 			[choice(choices: 
 			[
-				'nagiosxi', 
+				'r1soft-server', 
 			], 
 		description: 'What would you like to build? ', 
 		name: 'TOOL'), 
@@ -31,7 +31,7 @@ node {
 		timestamps {
 			ws {
 				sh "packer version"
-				sh "packer build --var region=${REGION}  --var-file   nagiosxi/variable.json  tools/jenkins.json"
+				sh "packer build --var region=${REGION}  --var-file   r1soft-server/variable.json  tools/r1soft-server.json"
 		}
 	}
 }
