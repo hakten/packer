@@ -3,7 +3,7 @@ node {
 		[parameters(
 			[choice(choices: 
 			[
-				'elk', 
+				'ansible-tower', 
 			], 
 		description: 'What would you like to build? ', 
 		name: 'TOOL'), 
