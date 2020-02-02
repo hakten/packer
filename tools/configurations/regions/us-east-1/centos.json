@@ -1,6 +1,0 @@
-{
-    "region":             "us-east-1",
-    "instance_type":      "t2.micro",
-    "ssh_username":       "centos",
-    "version":            "version/0.11"
-}
