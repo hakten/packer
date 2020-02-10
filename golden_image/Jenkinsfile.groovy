@@ -23,7 +23,7 @@ node {
 		timestamps {
 			ws {
 				echo "Slack"
-			checkout([$class: 'GitSCM', branches: [[name: 'master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/farrukh90/packer.git']]])
+			checkout([$class: 'GitSCM', branches: [[name: 'master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/hakten/packer.git']]])
 		}
 	}
 }
@@ -35,12 +35,12 @@ node {
 		}
 	}
 }
-	stage("Send slack notifications"){
-		timestamps {
-			ws {
-				echo "Slack"
-				//slackSend color: '#BADA55', message: 'Hello, World!'
-			}
-		}
-	}
+	// stage("Send slack notifications"){
+	// 	timestamps {
+	// 		ws {
+	// 			echo "Slack"
+	// 			//slackSend color: '#BADA55', message: 'Hello, World!'
+	// 		}
+	// 	}
+	// }
 }
