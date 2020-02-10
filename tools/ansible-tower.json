@@ -14,21 +14,5 @@
       },
       "ssh_username": "{{user `ssh_username`}}",
       "ami_name": "ansible-tower {{timestamp}}"
-    }],
-    "provisioners": [
-        {
-            "type":  "file",
-            "source": "files/r1soft.repo",
-            "destination": "/tmp/r1soft.repo"
-        },
-        {
-          "type":  "shell",
-          "inline": [
-              "sudo mv /tmp/r1soft.repo /etc/yum.repos.d/r1soft.repo",
-              "sudo yum update  -y",
-              "sudo  yum install serverbackup-enterprise-agent -y",
-              "sudo systemctl enable sbm-agent"
-            ]
-        }
-    ]
+    }]
 }

@@ -35,12 +35,12 @@ node {
 		}
 	}
 }
-	stage("Send slack notifications"){
-		timestamps {
-			ws {
-				echo "Slack"
-				//slackSend color: '#BADA55', message: 'Hello, World!'
-			}
-		}
-	}
+	// stage("Send slack notifications"){
+	// 	timestamps {
+	// 		ws {
+	// 			echo "Slack"
+	// 			//slackSend color: '#BADA55', message: 'Hello, World!'
+	// 		}
+	// 	}
+	// }
 }
